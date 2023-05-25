@@ -1,0 +1,414 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO PARA EL BANNER PEQUEÑO TOP DE PÁGINA */
+.banner {
+background-color: rgb(238, 129, 5);
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* ESTILO PARA EL COLOR DE FONDO DEL BODY */
+body {
+   background-image: url('/img/backgrundbody.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* ESTILO PARA EL TÍTULO PRINCIPAL */
+h1 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* ESTILOS PARA EL NAV */
+/* nav {
+    display: flex;
+    justify-content: center;
+    background-color: #72f04b;
+}
+  
+nav li {
+    display: inline-block;
+}
+  
+nav li a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+} */
+
+/* ESTILO PARA IMAGEN DEL HOME 
+.imagenhome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenhome img {
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+} */
+
+/* ESTILO PARA LOS TITULOS H2 */
+h2 {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+/* ESTILO PARA CENTRAR LAS IMAGENES DEL CAROUSEL */
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ESTILOS PARA PRODUCTOS */
+.my-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.my-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 3px;
+}
+  
+.my-link.active {
+    font-weight: bold;
+}
+
+/* ESTILO PARA FILTRO DE PRODUCTOS */
+.filtro {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+    justify-items: start;
+}
+  
+.filter label {
+    grid-column: 1;
+}
+  
+.filter select, .filter input {
+    grid-column: 1;
+}
+  
+.filter button {
+    grid-column: 1;
+    margin-top: 5px;
+}
+
+/* ESTILO PARA IFRAME - LOCALES */
+/* LOCAL UNO */
+.containerUno {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.localUno {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+.listaLocaluno {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* LOCAL DOS */
+.containerDos {
+    display: flex;
+    flex-direction: column;
+}
+  
+.localDos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 60px;
+}
+
+.listaLocaldos {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+iframe {
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+/* LOCAL TRES */
+.parrafoSucursales { 
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+
+}
+
+@media (max-width: 600px) {
+.banner {
+    font-size: 14px;
+}
+.navbar-nav .nav-link {
+    padding: 8px 12px;
+}
+h2, h3, .parrafoSucursales, .listaLocaluno, .listaLocaldos, .mediospago, .redessociales {
+    text-align: center;
+}
+.containerUno, .containerDos {
+    display: block;
+}
+.localUno, .localDos {
+    display: flex;
+    flex-direction: column;
+}
+.localUno iframe, .localDos iframe {
+    width: 100%;
+    height: 200px;
+}
+}
+
+/* ESTILO PARA TITULOS  h2 DE TIPS NUTRICIONALES */
+.positionGrid {
+    display: inline-flex;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+/* ESTILO PARA IMAGENES DE PROMOCIONES SEMANALES 
+.imagenpromociones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.imagenpromociones img {
+    width: 200px;
+    height: 150px;
+    margin: 15px;
+}
+*/
+
+/* ESTILO PARA IMAGENES DE MEDIOS DE PAGO */
+.mediospago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mediospago img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+/* ESTILO PARA IMAGENES DE REDES SOCIALES
+ .redessociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redessociales img {
+    width: 70px;
+    margin-bottom: 20px;
+    padding: 5px;
+} */
+
+.redessociales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.redessociales img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+
+/* ESTILO PARA TABLAS - TIPS NUTRICIONALES
+table {
+    font-size: 10px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    border: 2px;
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 2px;
+}
+
+th {
+    background-color: yellow;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 2px;
+} */
+
+.tableContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  
+table {
+    font-size: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    border: 2px;
+}
+  
+th {
+    background-color: yellow;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 2px;
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 2px 2px;
+}
+
+
+/* ESTILO PARA ALINEAR FORMULARIOS - CONTACTO*/
+.containerGrid {
+    display: grid;
+    place-items: center;
+    height: 100vh; 
+}
+  
+.form {
+    width: 600px;
+}
+
+.form label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    display: inline-block;
+    width: 350px;
+    margin-bottom: 10px;
+}
+  
+.form input[type="button"],
+.form input[type="reset"] {
+    margin-top: 5px;
+}
+
+.comentarioEstilo {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.comentarioEstilo input,
+.comentarioEstilo textarea {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 5px;
+}
+
+.comentarioEstilo input[type="button"],
+.comentarioEstilo input[type="reset"] {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+}
+
+/* MEDIA QUERIE PARA FORMULARIOS - CONTACTO */
+@media screen and (max-width: 600px) {
+.form {
+    width: 100%;
+}
+    
+.form label {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+}
+    
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+}
+
+/* ESTILO PARA NOSOTROS */
+.nosotros {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #f5f5f5;
+    padding: 10px;        
+}
+
+/* ESTILO PARA LOGO - NOSOTROS */
+.logonosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logonosotros img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* ESTILO PARA PIE DE PÁGINA */
+footer {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
